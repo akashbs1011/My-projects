@@ -1,0 +1,4 @@
+# Copy to local.properties and set the paths for your machine.
+# This file is machine-specific and must never be committed.
+sdk.dir=/path/to/Android/sdk
+flutter.sdk=/path/to/flutter

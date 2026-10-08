@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:fillColor="#0E7C86"
+        android:pathData="M24,10 L84,10 A14,14 0 0 1 98,24 L98,84 A14,14 0 0 1 84,98 L24,98 A14,14 0 0 1 10,84 L10,24 A14,14 0 0 1 24,10 Z" />
+
+    <!-- A cardiac trace: the one mark that says what this app is for. -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M26,54 L38,54 L46,36 L58,72 L67,48 L73,58 L84,58" />
+</vector>

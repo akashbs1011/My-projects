@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Debug builds talk to a backend on the local network over plain HTTP.
+         The main manifest sets usesCleartextTraffic="false" for release, so
+         tools:replace is required to override it here rather than letting the
+         manifest merger fail on the conflict.
+
+         This only relaxes the flag; network_security_config.xml still governs
+         which hosts are actually permitted over cleartext. -->
+    <application
+        android:usesCleartextTraffic="true"
+        tools:replace="android:usesCleartextTraffic" />
+</manifest>

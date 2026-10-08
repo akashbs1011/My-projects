@@ -1,0 +1,30 @@
+# Render deployment for the Clinical-AI backend.
+#
+# The model and the seeded reference data are built during deploy rather than
+# committed: train_model.py reads datasets/Training.csv and writes
+# models/disease_model.joblib, so the running service always has a model built
+# by the same scikit-learn version it will load it with. Committing a .joblib
+# risks a version mismatch between build and runtime.
+services:
+  - type: web
+    name: clinical-ai-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: |
+      pip install -r requirements.txt
+      python train_model.py --no-plot
+      python seed_reference_data.py
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: JWT_SECRET
+        generateValue: true      # Render generates a strong secret for you
+      - key: DATABASE_URL
+        sync: false              # paste your MongoDB Atlas string in the dashboard
+      - key: DATABASE_NAME
+        value: clinical_ai
+      - key: DEBUG
+        value: "false"

@@ -1,0 +1,53 @@
+Generated: 2026-09-29T05:39:11.416639+00:00
+Algorithm: random_forest
+Dataset: E:\clinical-ai (2)\clinical-ai\datasets\Training.csv
+
+                                         precision    recall  f1-score   support
+
+(vertigo) Paroymsal  Positional Vertigo       1.00      1.00      1.00         1
+                                   AIDS       1.00      1.00      1.00         1
+                                   Acne       1.00      1.00      1.00         1
+                    Alcoholic hepatitis       1.00      1.00      1.00         2
+                                Allergy       1.00      1.00      1.00         1
+                              Arthritis       1.00      1.00      1.00         1
+                       Bronchial Asthma       1.00      1.00      1.00         1
+                   Cervical spondylosis       1.00      1.00      1.00         1
+                            Chicken pox       1.00      1.00      1.00         2
+                    Chronic cholestasis       1.00      1.00      1.00         2
+                            Common Cold       1.00      1.00      1.00         2
+                                 Dengue       1.00      1.00      1.00         2
+                               Diabetes       1.00      1.00      1.00         2
+           Dimorphic hemmorhoids(piles)       1.00      1.00      1.00         1
+                          Drug Reaction       1.00      1.00      1.00         1
+                       Fungal infection       1.00      1.00      1.00         1
+                                   GERD       1.00      1.00      1.00         1
+                        Gastroenteritis       1.00      1.00      1.00         1
+                           Heart attack       1.00      1.00      1.00         1
+                            Hepatitis B       1.00      1.00      1.00         2
+                            Hepatitis C       1.00      1.00      1.00         1
+                            Hepatitis D       1.00      1.00      1.00         2
+                            Hepatitis E       1.00      1.00      1.00         2
+                           Hypertension       1.00      1.00      1.00         1
+                        Hyperthyroidism       1.00      1.00      1.00         2
+                           Hypoglycemia       1.00      1.00      1.00         2
+                         Hypothyroidism       1.00      1.00      1.00         2
+                               Impetigo       1.00      1.00      1.00         1
+                               Jaundice       1.00      1.00      1.00         2
+                                Malaria       1.00      1.00      1.00         2
+                               Migraine       1.00      1.00      1.00         2
+                        Osteoarthristis       1.00      1.00      1.00         1
+           Paralysis (brain hemorrhage)       1.00      1.00      1.00         1
+                    Peptic ulcer diseae       1.00      1.00      1.00         1
+                              Pneumonia       1.00      1.00      1.00         2
+                              Psoriasis       1.00      1.00      1.00         1
+                           Tuberculosis       1.00      1.00      1.00         2
+                                Typhoid       1.00      1.00      1.00         2
+                Urinary tract infection       1.00      1.00      1.00         1
+                         Varicose veins       1.00      1.00      1.00         2
+                            hepatitis A       1.00      1.00      1.00         2
+
+                               accuracy                           1.00        61
+                              macro avg       1.00      1.00      1.00        61
+                           weighted avg       1.00      1.00      1.00        61
+
+NOTE: near-perfect accuracy on this dataset is expected. The public Kaggle symptom-disease dataset is synthetically generated with a fixed symptom pattern per disease, so classes are almost linearly separable. This score reflects the dataset's structure and should not be read as real-world clinical accuracy.

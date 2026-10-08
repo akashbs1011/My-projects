@@ -1,0 +1,40 @@
+{
+  "_review_notice": "REQUIRES CLINICIAN REVIEW BEFORE ANY REAL-WORLD USE. This is a conservative triage-escalation list, not a diagnostic rule set. Entries are matched against the canonical symptom vocabulary derived from Training.csv; entries with no counterpart in the dataset simply never fire. Amend this file rather than the application code.",
+  "_purpose": "When any listed symptom is selected, the application surfaces a prompt to seek professional care. It never suppresses or alters the model's output.",
+  "urgent": [
+    "chest pain",
+    "breathlessness",
+    "altered sensorium",
+    "coma",
+    "unconsciousness",
+    "loss of consciousness",
+    "acute liver failure",
+    "stomach bleeding",
+    "blood in sputum",
+    "bloody stool",
+    "vomiting blood",
+    "severe bleeding",
+    "weakness of one body side",
+    "slurred speech",
+    "stiff neck",
+    "fluid overload",
+    "swelling of stomach",
+    "fast heart rate",
+    "sunken eyes",
+    "dehydration",
+    "continuous high fever",
+    "seizures",
+    "difficulty breathing"
+  ],
+  "keywords": [
+    "chest pain",
+    "breathless",
+    "unconscious",
+    "seizure",
+    "bleeding",
+    "coma",
+    "paralysis",
+    "stroke",
+    "suicid"
+  ]
+}

@@ -1,0 +1,44 @@
+# --- Web framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.0
+python-multipart==0.0.20
+
+# --- Database ---
+motor==3.6.0
+pymongo==4.9.2
+
+# --- Auth / security ---
+passlib[bcrypt]==1.7.4
+bcrypt==4.2.1
+PyJWT==2.10.1
+email-validator==2.2.0
+
+# --- Machine learning ---
+pandas==2.2.3
+numpy==2.2.1
+scikit-learn==1.6.0
+joblib==1.4.2
+matplotlib==3.10.0
+
+# --- Fuzzy symptom matching ---
+rapidfuzz==3.11.0
+
+# --- RAG ---
+
+# --- Language detection / transliteration ---
+langdetect==1.0.9
+indic-transliteration==2.3.64
+
+# --- Testing ---
+pytest==8.3.4
+pytest-asyncio==0.25.0
+httpx==0.28.1
+
+# --- Optional providers (uncomment what you use) ---
+# anthropic==0.42.0
+# openai==1.59.0
+# google-cloud-translate==3.19.0
+# transformers==4.47.1        # for AI4Bharat IndicTrans2
+# torch==2.5.1                # for IndicTrans2 / local embeddings on GPU

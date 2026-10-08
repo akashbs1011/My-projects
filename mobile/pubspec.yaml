@@ -1,0 +1,50 @@
+name: clinical_ai
+description: Multilingual, explainable clinical decision support. Symptom analysis backed by FastAPI, a Random Forest classifier and a MedQuAD RAG index.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: '>=3.22.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.2
+
+  # Routing with an authentication guard
+  go_router: ^14.6.2
+
+  # Networking - Dart's http package, no axios anywhere in this project
+  http: ^1.2.2
+
+  # Storage: JWT in the platform keystore/keychain, preferences in plain storage
+  flutter_secure_storage: ^9.2.2
+  shared_preferences: ^2.3.3
+
+  # Optional voice input via platform speech recognition
+  speech_to_text: ^7.0.0
+
+  # Reads results aloud for people who cannot read the screen
+  flutter_tts: ^4.2.0
+
+  # Date and number formatting per locale
+  intl: ^0.20.2
+
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  # No asset or font bundles are declared. Indic scripts render through the
+  # platform's own system fonts, so nothing has to ship with the binary and
+  # the build cannot fail on a missing asset path.

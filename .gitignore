@@ -1,0 +1,108 @@
+# ================================
+# Environment / Secrets
+# ================================
+.env
+.env.local
+*.env
+!.env.example
+
+
+# ================================
+# Python / Backend
+# ================================
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Python virtual environments
+clinical-ai-env/
+backend/clinical-ai-env/
+
+
+# ================================
+# Trained Model / Generated Artifacts
+# ================================
+models/*.joblib
+models/*.pkl
+models/vectorstore/
+backend/data/processed/
+
+docs/model_evaluation/*.json
+docs/model_evaluation/*.png
+
+
+# ================================
+# Datasets
+# ================================
+# Keep the project's CSV datasets in GitHub.
+
+
+# ================================
+# Flutter / Dart
+# ================================
+mobile/.dart_tool/
+mobile/.packages
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+
+# Keep pubspec.lock ignored for this application
+mobile/pubspec.lock
+
+
+# ================================
+# Android
+# ================================
+mobile/android/.gradle/
+mobile/android/.kotlin/
+mobile/android/local.properties
+mobile/android/key.properties
+
+# Android signing keys
+*.jks
+*.keystore
+
+
+# ================================
+# iOS / Xcode
+# ================================
+mobile/ios/Pods/
+mobile/ios/.symlinks/
+mobile/ios/Flutter/ephemeral/
+mobile/ios/Flutter/Flutter.framework
+mobile/ios/Flutter/Flutter.podspec
+mobile/ios/Flutter/Generated.xcconfig
+mobile/ios/Flutter/flutter_export_environment.sh
+mobile/ios/Podfile.lock
+**/xcuserdata/
+
+
+# ================================
+# Build / Temporary Files
+# ================================
+*.log
+*.tmp
+*.temp
+
+
+# ================================
+# Editors / IDE
+# ================================
+.idea/
+*.iml
+.vscode/
+
+
+# ================================
+# Operating System
+# ================================
+.DS_Store
+Thumbs.db
+desktop.ini
